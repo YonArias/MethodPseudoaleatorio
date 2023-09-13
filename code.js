@@ -58,10 +58,13 @@ function BlumBlum(){
         });
 
         // ****
-        tr.className = "bg-white"
-        tr.className += " border-b"
-        tr.className += " dark:bg-gray-800"
-        tr.className += " dark:border-gray-700"
+        tr.classList.add(
+            "bg-white",
+            "border-b",
+            "dark:bg-gray-800",
+            "dark:border-gray-700",
+            "hover:bg-gray-50",
+            "dark:hover:bg-gray-600")
         // ****
 
         if(data.indexOf(iteracion) == 0){
