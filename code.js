@@ -18,7 +18,6 @@ function BlumBlum(){
 
         data.push([new_seed, result, residuo, ri])
 
-        console.log(data.length)
         new_seed = residuo
     } while ((new_seed != seed && new_seed != result) && data.length < modulo*2)
     // Mostrando los datos
@@ -59,5 +58,4 @@ function BlumBlum(){
             tbody.appendChild(tr)
         }
     });
-    // Creando etiquetas
 }
