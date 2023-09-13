@@ -1,5 +1,17 @@
-function BlumBlum(){
+const myButton = document.getElementById("calcular");
 
+// Obtener el elemento de audio
+const audio = document.createElement("audio");
+audio.src = "./src/song_button.mp3";
+
+audio.load();
+
+myButton.addEventListener("click", function() {
+  // Reproducir el audio
+  audio.play();
+});
+
+function BlumBlum(){
     // Obteniendo los datos
     var a = parseInt(document.getElementById("value-a").value)
     var b = parseInt(document.getElementById("value-b").value)
